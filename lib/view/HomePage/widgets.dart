@@ -73,9 +73,7 @@ class _AnimationCardState extends State<AnimationCard>
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10), color: primaryColor),
       child: Gif(
-        fps: 10,
         controller: gifController,
-        // duration: const Duration(seconds: 20),
         autostart: Autostart.loop,
         placeholder: (context) =>
             const Center(child: CircularProgressIndicator()),
