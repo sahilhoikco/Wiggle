@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wiggle/utils/consts/colors.dart';
 import 'package:wiggle/view/HomePage/home.dart';
 
 void main() {
@@ -13,7 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Wiggle',
-      theme: ThemeData(fontFamily: 'SFpro'),
+      theme: ThemeData(
+        fontFamily: 'SFpro',
+        scaffoldBackgroundColor: black,
+        appBarTheme: const AppBarTheme(backgroundColor: black),
+      ),
       home: const HomePage(),
     );
   }
